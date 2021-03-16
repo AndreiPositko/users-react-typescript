@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+	<head>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131300897-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-131300897-1');
+		</script>
+
+
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>Владимир Буйнов | Резюме веб-мастера, портфолио</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Портфолио и резюме веб-мастера, веб-разработчика Буйнова Владимира. Примеры работ, резюме, перечень услуг с их примерной стоимостью, контакты." />
+		<meta name="keywords" content="создать сайт, заказать сайт, разработка сайтов, получить консультацию по работе с сайтом, заказать услуги веб-мастера, Владимир Буйнов, веб-мастер, веб-разработчик, веб-программист" />
+		<link rel="canonical" href="https://buinoff.tk" />
+
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+
+		<!-- ==============================================
+		CSS
+		=============================================== -->
+		<!--//<link rel="stylesheet" type="text/css" href="css/bootstrap.css">//-->
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+		<link id="main" rel="stylesheet" type="text/css" href="css/designr-theme-cyan2.css">
+		<link id="theme" rel="stylesheet" type="text/css" href="css/designr-theme-cyan2.css">
+		<link rel="stylesheet" type="text/css" href="css/fa-viber.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+		<!--//<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>//-->
+
+		<!-- ==============================================
+		JS
+		=============================================== -->
+
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+
+	</head>
+
+	<body data-spy="scroll" data-target="#main-nav" data-offset="200">
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand scrollto" href="/#home">Владимир Буйнов<br><span>веб-мастер</span></a>
+				</div>
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="sr-only">
+							<a href="#home" class="scrollto">Главная</a>
+						</li>
+						<li>
+							<a href="#about" class="scrollto">Обо мне</a>
+						</li>
+						<li>
+							<a href="#services" class="scrollto">Услуги</a>
+						</li>
+						<li>
+							<a href="#pricing" class="scrollto">Стоимость</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="scrollto">Мои работы</a>
+						</li>
+						<li>
+							<a href="#contact" class="scrollto">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<header id="home" class="jumbotron">
+			<div class="container">
+				<div class="message-box clearfix">
+					<div class="left-col">
+						<p><span>Кратко обо мне.<br/>Я: </span>веб-</p>
+					</div>
+					<div class="right-col flexslider home-slider" style="z-index:1;">
+						<ul class="slides">
+							<li><p>Мастер</p></li>
+							<li><p>Разработчик</p></li>
+							<li><p>Программист</p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-1 scrollimation fade-right">
+						<img class="img-responsive img-circle img-center" loading="lazy" src="assets/photo.jpg" alt="">
+					</div>
+					<div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+						<h1>Приветствую!</h1>
+						<p>Меня зовут Владимир. Я веб-мастер, веб-программист, веб-разработчик. За период с <b>2007</b> по <b>2020</b> год, мной было создано более <b>70</b> веб-проектов различного масштаба.<br/>К созданию сайтов я отношусь больше как к творческой деятельности, нежели как к работе.</p><i class="fa fa-file-word-o pull-left word"></i><h2><a href="files/resume_V.Buinoff_web-master_php-developer_programmer.docx" download>Резюме</a></h2>(формат: .docx, размер: 35 кб)
+						<div style="text-align: center; margin: 10px auto;"><p>Смотреть:</p>
+							<a href="/#portfolio" class="btn btn-theme fade-left transparent scrollto">Мои работы</a>
+							<a href="/#contact" class="btn btn-theme fade-right transparent scrollto">Мои контакты</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="services">
+
+			<div class="container">
+
+				<h2 class="section-title scrollimation scale-in"><span>услуги</span><i class="icon-wrench"></i></h2>
+
+				<div class="row services scrollimation fade-left">
+					<div class="col-md-3 text-center">
+						<a class="icon scrollto" href="#pricing"><i class="fa fa-code"></i></a>
+						<h2>Разработка</h2>
+					</div>
+					<div class="col-md-3 details">
+						<p>В процессе создания сайтов, использую новейшие технологии и тенденции, как в программировании, так и в дизайне. Чистый код, адаптивный дизайн, быстрая работа сайтов.</p>
+					</div>
+					<div class="col-md-3 text-center">
+						<a class="icon scrollto" href="#pricing"><i class="fa fa-flag"></i></a>
+						<h2>Техподдержка</h2>
+					</div>
+					<div class="col-md-3 details">
+						<p>Осуществляю поддержку созданных сайтов, на протяжении всего времени сотрудничества с клиентами. В поддержку включен круглосуточный мониторинг доступности сайта.</p>
+					</div>
+				</div>
+
+				<div class="row line visible-md visible-lg">
+					<div class="col-md-3"><span class="spot"></span></div>
+					<div class="col-md-3"><span class="spot"></span></div>
+					<div class="col-md-3"><span class="spot"></span></div>
+					<div class="col-md-3"><span class="spot"></span></div>
+				</div>
+
+				<div class="row services bottom-row scrollimation fade-right">
+					<div class="col-md-3 text-center col-md-push-3">
+						<h2>Продвижение</h2>
+						<a class="icon scrollto" href="#pricing"><i class="fa fa-rocket"></i></a>
+					</div>
+					<div class="col-md-3 details col-md-pull-3">
+						<p>Помогаю сайтам достичь высоких позиций первой страницы в выдаче поисковых систем <b>Google</b> и <b>Yandex</b>, благодаря <b>SEO</b>-оптимизации и "белым" (разрешенным) методам продвижения сайтов.</p>
+					</div>
+					<div class="col-md-3 text-center  col-md-push-3">
+						<h2>Консультации</h2>
+						<a class="icon scrollto" href="#pricing"><i class="fa fa-pencil"></i></a>
+					</div>
+					<div class="col-md-3 details  col-md-pull-3">
+						<p>Предоставляю клиентам всю необходимую информацию по работе с их сайтом. Рекомендации и предложения для клиентов, по улучшению, модернизации существующих сайтов.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="hyperhost1">
+			<div class="container">
+				<div class="row scrollimation fade-in">
+					<div class="col-sm-12">
+						<div id="hyperhost1-slider" class="flexslider">
+							<h3 class="text-center text-white mb-3">Бонус для моих клиентов: скидка 12% на услуги хостинга от компании HyperHost. В бонус включено:</h3>
+							<div class="container-fluid mb-3">
+								<div class="row">
+									<div class="col-xs-4 col-xs-offset-4 pricingTable">
+										<ul class="pricing-content mb-0">
+											<li>Скидка 12% на услуги хостинга</li>
+											<li>Техподдержка 24/7/365</li>
+											<li>Бесплатный перенос сайтов</li>
+											<li>Домен в подарок</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<p class="text-center dis mb-3"><a class="btn btn-theme btn-lg fade-out transparent" rel="nofollow noopener" href="https://hyperhost.ua/client/aff.php?aff=1267" target=_blank>Получить бонус</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="pricing" class="container pricing">
+		    <div class="row">
+		        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 scrollimation fade-left">
+		            <div class="pricingTable">
+		                <h3 class="title">Разработка<span class="from">от экв.:</span></h3>
+		                <div class="price-value">
+		                    <span class="amount">$150
+                        		<span class="month">/заказ</span>
+		                    </span>
+		                </div>
+		                <ul class="pricing-content">
+		                    <li>Сайт-визитка</li>
+		                    <li>Статичный сайт</li>
+		                    <li>Лэндинг-пейдж, сайт-визитка</li>
+		                    <li>Инфо-сайт, блог</li>
+		                    <li>Корпоративный сайт</li>
+		                    <li>Интернет-магазин</li>
+		                    <li>И другие типы сайтов</li>
+		                </ul>
+		                <form name="site" action="issue.php" method="post">
+		                	<input name="order" type="hidden" value="site">
+                        	<button type="submit" class="pricingTable-signup">Заказать!</button>
+						</form>
+		            </div>
+		        </div>
+
+		        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 scrollimation fade-left">
+		            <div class="pricingTable">
+		                <h3 class="title">Техподдержка<span class="from">от экв.:</span></h3>
+		                <div class="price-value">
+		                    <span class="amount">$20
+                        		<span class="month">/месяц</span>
+		                    </span>
+		                </div>
+		                <ul class="pricing-content">
+		                    <li>Консультации</li>
+		                    <li>Мониторинг доступности</li>
+		                    <li>Устранение неисправностей</li>
+		                    <li>Обновление скриптов</li>
+		                    <li>Добавление материалов</li>
+		                    <li>Расширение функционала</li>
+		                    <li>И другие услуги</li>
+		                </ul>
+		                <form name="support" action="issue.php" method="post">
+		                	<input name="order" type="hidden" value="support">
+                        	<button type="submit" class="pricingTable-signup">Заказать!</button>
+						</form>
+		            </div>
+		        </div>
+
+		        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 scrollimation fade-left">
+		            <div class="pricingTable">
+		                <h3 class="title">Продвижение<span class="from">от экв.:</span></h3>
+		                <div class="price-value">
+		                    <span class="amount">$200
+                        		<span class="month">/месяц</span>
+		                    </span>
+		                </div>
+		                <ul class="pricing-content">
+		                    <li>Исследование рынка</li>
+		                    <li>Исследование конкуренции</li>
+		                    <li>Разработка стратегии</li>
+		                    <li>Белые методы</li>
+		                    <li>Анализ посещаемости</li>
+		                    <li>Подробная отчетность</li>
+		                    <li>Рекомендации и консультации</li>
+		                </ul>
+		                <form name="promotion" action="issue.php" method="post">
+		                	<input name="order" type="hidden" value="promotion">
+                        	<button type="submit" class="pricingTable-signup">Заказать!</button>
+						</form>
+		            </div>
+		        </div>
+
+		        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 scrollimation fade-left">
+		            <div class="pricingTable">
+		                <h3 class="title">Консультации<span class="from">от экв.:</span></h3>
+		                <div class="price-value">
+		                    <span class="amount">$10
+                        		<span class="month">/час</span>
+		                    </span>
+		                </div>
+		                <ul class="pricing-content">
+		                    <li>Обучение персонала</li>
+		                    <li>Работа с Вашим сайтом</li>
+		                    <li>Вопросы по настройке</li>
+		                    <li>Помощь в управлении сайтом</li>
+		                    <li>Информация по терминам</li>
+		                    <li>Разъяснение документации</li>
+		                    <li>Другие вопросы</li>
+		                </ul>
+		                <form name="info" action="issue.php" method="post">
+		                	<input name="order" type="hidden" value="info">
+                        	<button type="submit" class="pricingTable-signup">Заказать!</button>
+						</form>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+
+		<div id="twitter1">
+			<div class="container">
+				<div class="row scrollimation fade-in">
+					<div class="col-sm-12">
+						<div id="twitter-slider1" class="flexslider">
+
+							<p class="text-center dis"><a class="btn btn-theme btn-lg fade-out transparent" href="/issue.php">Заказать сайт или услугу</a></p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="portfolio">
+			<div id="portfolio-header" class="text-center">
+				<h2 class="section-title scrollimation scale-in"><span>Мои работы</span><i class="icon-pencil"></i></h2>
+				<h3 class="portfolio_sub">Уровень моей квалификации продемонстрирован, но не ограничен, приведенными ниже примерами работ</h3>
+				<div class="container masonry-wrapper scrollimation fade-in">
+					<div id="projects-container">
+						<a class="project-item web-design" href="https://zikrataya.pro" data-images="assets/projects/thumb/zikrataya-pro-ru_1_thumb-1.png,assets/projects/thumb/zikrataya-pro-ru_1_thumb-2.png,assets/projects/thumb/zikrataya-pro-ru_1_thumb-3.png,assets/projects/thumb/zikrataya-pro-ru_1_thumb-4.png,assets/projects/thumb/zikrataya-pro-ru_1_thumb-5.png,assets/projects/thumb/zikrataya-pro-ru_1_thumb-6.png,assets/projects/thumb/zikrataya-pro-ru_1_thumb-7.png,assets/projects/thumb/zikrataya-pro-ru_1_thumb-8.png">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/zikrataya-pro-ru_1_thumb-1.png" alt="Сайт профессионального литературного редактора, корректора, переводчика Ольги Зикратой">
+							<div class="hover-mask">
+								<h2 class="project-title">Сайт литературного редактора, корректора, переводчика, 2020 г.<br></h2>
+								<p>zikrataya.pro</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Переработанный и дополненный сайт литературного редактора, корректора, переводчика Ольги Зикратой. Первоначальный вариант сайта был создан мной же, в 2013 году, на русском языке, с адресом zikrataya.ru. Сайт переехал на новый адрес, получил еще две языковые версии (украинскую и английскую). Был полностью изменен дизайн сайта, переработаны тексты страниц с учетом новых требований рынка услуг данного направления и SEO.</p>
+								<p>В процессе создания сайта, были применены технологии "Joomla!" последней версии, а также - установлены расширения (дополнения) моей собственной разработки, созданные с применением языков программирования PHP, JavaScript (библиотека JQuery), фреймворка Bootstrap 4.</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/zikrataya_pro_logo.png" alt="">
+								<p><b><i>Оценочная стоимость создания такого сайта - от 1500 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item web-design" href="https://crystal.ballet.kharkov.ua" data-images="assets/projects/thumb/thumb_crystal-ballet-kharkov-ua_2019.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/crystal-ballet-kharkov-ua_2019.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Конкурс-фестиваль Хрустальный Микрофон, 2019 г.</h2>
+								<p>crystal.ballet.kharkov.ua</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Мультиязычный лендинг для организации приема заявок на участие в ежегодном весеннем фестивале «Хрустальный микрофон», который проводится среди детей 3-14 лет. Организатор конкурса - харьковская хореографическая школа</p>
+								<p>На сайте применен небольшой скрипт для динамической смены языка сайта, в зависимости от выбора языковой версии сайта, и форма с функцией отправки файлов. Работа выполнена в рамках сотрудничества с коллективом веб-студии WorldOfSites.</p>
+								<p><b><i>Оценочная стоимость создания такого сайта - от 150 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item web-design" href="https://ballet.kharkov.ua" data-images="assets/projects/thumb/img14_1.jpg,assets/projects/thumb/img14_2.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img14_1.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Харьковская хореографическая школа, 2018 г.<br></h2>
+								<p>Детский балетный театр</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Проект сайта Харьковской хореографической школы и ее балетного театра. Уникальный, крупнейший в Украине детский балетный театр, с авторскими постановками, костюмами и декорациями.</p>
+								<p>Этот театр завоевал сердца не только украинских почитателей балета, но и любителей балеа далеко за пределами Украины. Театр Харьковской хореографической школы, часто выступает на сценах Испании, Китая, Японии, и других стран. Среди выпускников Харьковской балетной школы, есть знаменитые танцоры, прославившиеся во всем мире.</p>
+								<p>В процессе создания сайта, были применены технологии компонента К2, стандартных технологий "Joomla!", а также, технологии JoomGallery Pro, и другие технологические разработки известных производителей расширений для CMS "Joomla!"</p>
+								<p><b><i>Оценочная стоимость создания такого сайта - от 600 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item icons ui-kits" href="https://matix.com.ua/" data-images="assets/projects/thumb/matix.com.ua_thumb_1.jpg,assets/projects/thumb/matix.com.ua_thumb_2.jpg,assets/projects/thumb/matix.com.ua_thumb_3.jpg,assets/projects/thumb/matix.com.ua_thumb_4.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/matix.com.ua_thumb_1.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Интернет-магазин Матикс, 2018 г.</h2>
+								<p>matix.com.ua</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Интернет-магазин натуральной косметики Матикс, натуральное мыло ручной работы, массажные масла, и другие средства ухода за телом. Украина.</p>
+								<p>Разработан адаптивный дизайн в современном минималистичном стиле.</p>
+								<p>Применены нестандартные решения, написанные на PHP, JQuery, AJAX.</p>
+								<p>Доработан и расширен функционал стандартных скриптов сайта.</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/matix.com.ua_logo.png" alt="">
+								<p><b><i>Стоимость создания подобного сайта - от 800 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item icons ui-kits" href="https://carp-sazan.com" data-images="assets/projects/thumb/img11.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img11.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Интернет-магазин Карп-Сазан, 2017 г.</h2>
+								<p>carp-sazan.com</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Интернет-магазин Карп-Сазан, реализация товаров для рыбалки - приемущественно на карпа, сазана. Украина.</p>
+								<p>Одним из отличий дизайна данного сайта, является применение видео-бєкграунда - в фоне главной страницы сайта, воспроизводится видео-фрагмент, описывающий подводный мир, главными действующими лицами которого, являются именно карпы. В десктопной версии сайта, при подведении мышки к нижней части экрана, становятся доступны элементы управления фоновым видео - его можно остановить, промотать в любом направлении, и раскрыть на весь экран.</p>
+								<p>Кроме того, в создании этого сайта, было применено несколько нестандартных решений, практически полностью переработан внешний вид шаблона сайта, установлено несколько расширений для работы с сайтом.</p>
+								<p>Была произведена тонкая работа по настройке интернет-магазина, главной целью чего, являелось наиболее четкое представление товаров со всеми возможными их параметрами - размеры, цвет, длина, диаметр, номер, и другие атрибуты, в зависимости от выбора которых, меняется цена и состояние наличия на складе товара в данной конфигурации.</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/carp-sazan_logo.png" alt="">
+								<p><b><i>Стоимость создания подобного сайта - от 500 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item web-design ui-kits" href="#" data-images="assets/projects/thumb/img12.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img12.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Интернет-магазин <br>Hot Lingerie, 2017 г.</h2>
+								<!-- <p>hotlingerie.vladlena.tk (недоступен, на реконструкции)</p> -->
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Интернет-магазин Hot Lingerie - женское эротическое белье, одежда и аксессуары. Украина.</p>
+								<p>При создании сайта, был выбран вариант написания всего сайта с нуля, на языке программирования PHP+MySQL. Также, был разработан уникальный адаптивный дизайн для сайта.</p>
+								<p>В данный момент сайт находится на реконструкции, с будущим переездом на новый адрес (старый адрес более недоступен).</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/hotlingerie_logo.png" alt="">
+								<p>Сайт интернет-магазина Hot Lingerie успешно прошел тестирование при больших нагрузках посещаемости, выдав оптимальные результаты.</p>
+								<p><b><i>Стоимость создания подобного сайта - от 800 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item ui-kits" href="http://eurasiabild.kz" data-images="assets/projects/thumb/img8.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img8.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Корпоративный сайт Eurasia Build Group, 2016 г.</h2>
+								<p>eurasiabild.kz</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p>Сайт компании Eurasia Build Group - представителя ВASF: строительно-химические материалы в Актобе (Казахстан).</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/eurasiabild_logo.png"  alt="">
+								<p>При создании сайта была применена технология CMS "Joomla!", дополнительно было установлено и настроено несколько компонентов и расширений. Выбранный заказчиком шаблон был практически полностью переработан и изменен.</p>
+								<p><b><i>Стоимость создания подобного сайта - от 300 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item icons" href="http://autoslon.com.ua" data-images="https://images.shrinktheweb.com/xino.php?stwembed=1&stwsize=320x&stwaccesskeyid=928878ed3239038&stwurl=http://autoslon.com.ua">
+							<img class="img-responsive project-image" loading="lazy" src="https://images.shrinktheweb.com/xino.php?stwembed=1&stwsize=320x&stwaccesskeyid=928878ed3239038&stwurl=http://autoslon.com.ua" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Сайт СТО "АвтоСлон", Харьков, 2019 г.</h2>
+								<p>autoslon.com.ua</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Обновленный сайт харьковской СТО "АвтоСлон"</p>
+								<p>Сайт изначально был создан в 2013 году. В этом проекте был полностью переработан дизайн и концепция сайта - вместо многостраничного, было решено сделать одностраничный сайт в виде лендинг-пейдж, на 2-х языках - украинском и русском. Сайт использует упрощенный вариант самописной CMS. Для создания проекта, использовались языки программирования PHP и JavaScript, веб-фреймворк Bootstrap.</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/autoslon-logo.png" alt="">
+								<p><b><i>Стоимость создания подобного сайта - от 250 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item icons" href="#" data-images="assets/projects/thumb/img6.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img6.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Компьютерная мастерская ESCape, 2014 г.</h2>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Информационный сайт компьютерной мастерской ESCape - ремонт и обслуживание компьютерной техники в Харькове.</p>
+								<p>Сайт создан на популярной CMS "Joomla!". В этои проекте был переработан дизайн шаблона, добавлено несколько компонентов и расширений, в некоторых местах, применены нестандартные решения с использованием скриптов, написанных на языках программирования PHP и JavaScript.</p>
+								<p>В данный момент сайт более недоступен по причине прекращения существования организации.</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/escape.pp.ua_logo.png" alt="">
+								<p><b><i>Стоимость создания подобного сайта - от 350 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item web-design" href="#" data-images="assets/projects/thumb/sauran.org.kz_thumb_1.jpg,assets/projects/thumb/sauran.org.kz_thumb_2.jpg,assets/projects/thumb/sauran.org.kz_thumb_3.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/sauran.org.kz_thumb_1.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Сауран Инжиниринг, 2015 г.</h2>
+								<!-- <p>sauran.org.kz</p> -->
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Корпративный сайт строительно-монтажной компании Сауран Инжиниринг. Актобе, Казахстан.</p>
+								<p>Для создания сайта, была использована система управления контентом "Joomla!". </p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/sauran-logo.png"  alt="">
+								<p>Стандатные функции сайта были расширены несколькими дополнениями. Также, был создан каталог продукции и фотоальбом.</p>
+								<p>В 2018 году были заменены основные цвета сайта, и логотип.</p>
+								<p>В данный момент сайт более недоступен по причине прекращения существования организации.</p>
+								<p><b><i>Стоимость создания подобного сайта - от 400 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item web-design" href="#" data-images="assets/projects/thumb/img1.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img1.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Туристическая компания Оберег-Тур, 2013 г.</h2>
+								<!-- <p>obereg-t.com</p> -->
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p>Информационный сайт туристической компании, осуществляющей экскурсии по Харькову и Украине.</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/obereg-t.com_logo.png"  alt="">
+								<p>Для создания этого сайта использовалась CMS "Joomla!" с полной переработкой дизайна.</p>
+								<p>Среди нестандартных технических решений - фоновая галерея изображений: плавно меняющийся бэкграунд сайта с перелистыванием фоновых изображений, возможностью смены кадров как мышкой, так и клавиатурой. Также, одним кликом можно убрать или показать текстовую часть сайта. Таким образом, можно посмотреть полноформатное слайд-шоу фоновых изображений с описанием и ссылкой на подробный текст соответствующего материала сайта.</p>
+								<p>В данный момент сайт недоступен по причине временной приостановке деятельности организации из-за карантина.</p>
+								<p><b><i>Стоимость создания подобного сайта - от 500 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item icons" href="http://www.megamax.kz" data-images="assets/projects/thumb/img2.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img2.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Сайт Агентства Мегамакс, 2014 г.</h2>
+								<p>megamax.kz</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Сайт-портал крупнейшего агентства в Актобе (Казахстан), предоставляющего населению множество различных услуг.</p>
+								<p>Сайт под управлением CMS "Joomla!" и множеством дополнений - компонентов, модулей, плагинов</p>
+								<img class="img-responsive img-center" src="assets/projects/megamax.kz_logo.png" alt="">
+								<p>Для разработки сайта было применено несколько нестандартных решений, в виде отдельно написанных скриптов. Сайт имеет статическую мобильную версию, переход на которую происходит автоматически, если посетитель заходит на сайт с мобильного устройства.</p>
+								<p><b><i>Стоимость создания подобного сайта - от 750 у.е.</i></b></p>
+							</div>
+						</a>
+						<a class="project-item web-design" href="https://mammysmile.kz" data-images="assets/projects/thumb/img5.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/img5.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Одежда для беременных МаммиСмайл, 2015 г.</h2>
+								<p>mammysmile.kz</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Информационный сайт и каталог товаров магазина Мамми Смайл в городе Астана (Казахстан).</p>
+								<p>Система управления контентом "Joomla!" с множеством дополнений и улучшений - компоненты, модули, нестандартные скрипты.</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/mammysmile.kz_logo.png"  alt="">
+								<p>Сайт вот уже несколько лет продвигается мной в поисковых системах, и занимает лидирующие позиции на первой странице выдачи по всем необходимым поисковым запросам.</p>
+							</div>
+						</a>
+						<a class="project-item web-design" href="https://sinan-ten.com" data-images="assets/projects/thumb/sinan-ten.com_thumb_1.jpg,assets/projects/thumb/sinan-ten.com_thumb_2.jpg,assets/projects/thumb/sinan-ten.com_thumb_3.jpg,assets/projects/thumb/sinan-ten.com_thumb_4.jpg,assets/projects/thumb/sinan-ten.com_thumb_5.jpg,assets/projects/thumb/sinan-ten.com_thumb_6.jpg">
+							<img class="img-responsive project-image" loading="lazy" src="assets/projects/thumb/sinan-ten.com_thumb_1.jpg" alt="">
+							<div class="hover-mask">
+								<h2 class="project-title">Комплектующие к нагревательным приборам Sinan, 2020 г.</h2>
+								<p>sinan-ten.com</p>
+								<i class="readmore">Подробнее...</i>
+							</div>
+							<div class="sr-only project-description">
+								<p class="clearfix">Оптовая торговля комплектующими производства Турции, Украины, Италии и других стран, официальный представитель завода Sinan (Турция).</p>
+								<img class="img-responsive img-center" loading="lazy" src="assets/projects/sinan-ten_logo.png"  alt="">
+								<p>Сайт выполнен в виде лендинг пейдж, статичного сайта без панели управления с несколькими дополнениями, написанными на языке PHP.</p>
+								<p><b><i>Стоимость создания подобного сайта - от 150 у.е.</i></b></p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="project-modal" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">закрыть &times;</button>
+						</div>
+						<div class="modal-body">
+							<div class="left-col">
+								<img class="img-responsive" src="assets/imac.png" alt="">
+								<div class="loader"></div>
+								<div class="image-wrapper"></div>
+							</div>
+							<h2>&nbsp;</h2>
+							<div class="project-descr"></div>
+							<div class="clearfix"></div>
+							<p class="text-center dis"><a class="btn link btn-theme" target=_blank rel="nofollow noopener"><i class="icon-external-link"></i>Посетить сайт</a> <a class="btn btn-theme" href="/issue.php">Заказать сайт</a></p>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="twitter2">
+			<div class="container">
+				<div class="row scrollimation fade-in">
+					<div class="col-sm-12">
+						<div id="twitter-slider2" class="flexslider">
+							<p class="text-center dis"><a class="btn btn-theme btn-lg fade-out transparent" href="/issue.php">Заказать сайт или услугу</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="contact">
+			<div class="container">
+				<h2 class="section-title scrollimation scale-in"><span>Мои контакты</span></h2>
+				<div class="row">
+					<div class="col-sm-5 contact-info scrollimation fade-right">
+						<p>Если Вы хотите заказать сайт, или у Вас есть вопрос, предложение сотрудничества, то Вы можете отправить мне сообщение, заполнив все поля в форме обратной связи рядом, или связаться со мной любым удобным для Вас способом, из указанных ниже.</p>
+						<address>
+							<p class="titler">Телефоны:</p>
+							<p>
+								<a href="tel:+380664117774">+38 (066) 411-777-4</a><br>
+								<a href="tel:+380671226577">+38 (067) 122-65-77</a>
+							</p>
+						</address>
+						<h3>Соц.сети и мессенджеры:</h3>
+						<ul class="socials">
+							<li><a href="https://t.me/buinoff" target=_blank rel="nofollow" title="Telegram"><i class="fa fa-telegram"></i></a></li>
+							<li><a href="skype:firstthenumberone?chat" rel="nofollow" title="Skype"><i class="fa fa-skype"></i></a></li>
+							<li><a href="//vk.com/buinoff" target=_blank rel="nofollow" title="VK"><i class="fa fa-vk"></i></a></li>
+							<li><a href="//www.facebook.com/buinoff" target=_blank rel="nofollow" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li class="hidden-xs hidden-sm pull-left"><a style="padding-top: 3px;" href="viber://chat?number=+380664117774" rel="nofollow" title="Viber"><i class="fa fa-viber"></i></a></li>
+							<li class="hidden-md hidden-lg pull-left"><a href="viber://add?number=380664117774" rel="nofollow" title="Viber"><i class="fa fa-viber"></i></a></li>
+						</ul>
+					</div>
+					<form id="contactme" class="col-sm-7 scrollimation fade-left" action="#" method="post" >
+						<div class="form-group">
+						  <label class="control-label" for="name">Имя</label>
+						  <div class="controls">
+							<input id="name" name="name" placeholder="Ваше имя..." class="form-control input-lg" type="text"  required="">
+						  </div>
+						</div>
+						<div class="form-group">
+						  <label class="control-label" for="email">Email</label>
+						  <div class=" controls">
+							<input id="email" name="email" placeholder="Ваш Email..." class="form-control input-lg" type="email"  required="">
+						  </div>
+						</div>
+						<div class="form-group">
+						  <label class="control-label" for="message">Сообщение</label>
+							<div class="controls">
+								<textarea id="message" name="message" placeholder="Ваш вопрос, или предложение..." class="form-control input-lg " rows="5"  required=""></textarea>
+							</div>
+						</div>
+						<input name="contactformsent" type="hidden" value="true">
+						<input name="ip" type="hidden" value="195.181.170.180">
+						<div id="html_element" style="margin-right: 15px; margin-top: 15px;" data-theme="clean" class="g-recaptcha" data-sitekey="6Lege5AUAAAAAGNlg99RsW6e9JpKTDaAvmrA8FEq"></div><br>
+						<p><input name="submit" type="submit" id="sendbutton" class="btn btn-theme btn-lg" value="Отправить" /></p>
+					</form>
+				</div>
+				<div id="mess"></div>
+			</div>
+		</section>
+
+		<footer id="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 left-col">
+						<h2 class="small-logo">Владимир Буйнов<br><span>Веб-мастер</span></h2>
+						<ul class="footer-nav">
+							<li><a class="scrollto" href="/#home">Главная</a></li>
+							<li><a class="scrollto" href="/#services">Услуги</a></li>
+							<li><a class="scrollto" href="/#pricing">Стоимость</a></li>
+							<li><a class="scrollto" href="/#portfolio">Мои работы</a></li>
+							<li><a class="scrollto" href="/#contact">Контакты</a></li>
+						</ul>
+						<p>&copy; Copyright 2018 - 2021 / Все права защищены</p>
+					</div>
+					<div class="col-sm-6 right-col">
+						<h2>Кто я?</h2>
+						<p>Веб-мастер, веб-разработчик, веб-программист. Основное направление моей деятельности - разработка, создание сайтов, продвижение их в поисковых системах. В своей работе по созданию сайтов, я использую передовые веб-технологии. Продвижение сайтов - только разрешенными, "белыми" методами.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+        <div class="scrollup">
+			<i class="fa fa-angle-up fa-2x"></i>
+		</div>
+
+		<!--//<script async defer src="js/contact.js"></script>//-->
+		<script defer src="js/designr.js"></script>
+
+		<script>
+			$(document).ready(function() { // вся мaгия пoслe зaгрузки стрaницы
+				$("#contactme").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+					var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+					var error = false; // прeдвaритeльнo oшибoк нeт
+					form.find('input').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
+						if ($(this).val() == '') { // eсли нaхoдим пустoe
+							alert('Пожалуйста, зaпoлнитe все необходимые поля формы.'); // гoвoрим зaпoлняй!
+							error = true; // oшибкa
+						}
+					});
+					if (!error) { // eсли oшибки нeт
+						var data = form.serialize(); // пoдгoтaвливaeм дaнныe
+						$.ajax({ // инициaлизируeм ajax зaпрoс
+						   type: 'POST', // oтпрaвляeм в POST фoрмaтe, мoжнo GET
+						   url: 'includes/functions.php', // путь дo oбрaбoтчикa, у нaс oн лeжит в тoй жe пaпкe
+						   dataType: 'json', // oтвeт ждeм в json фoрмaтe
+						   data: data, // дaнныe для oтпрaвки
+					       beforeSend: function(data) { // сoбытиe дo oтпрaвки
+					            $("#sendbutton").val('Отправка...');
+					            form.find('input[type="submit"]').attr('disabled', 'disabled'); // нaпримeр, oтключим кнoпку, чтoбы нe жaли пo 100 рaз
+					          },
+					       success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+					       		if (data['error']) { // eсли oбрaбoтчик вeрнул oшибку
+					       			alert(data['error']); // пoкaжeм eё тeкст
+					       		} else { // eсли всe прoшлo oк
+									$('#mess').css( "display", "block" )
+					       			$('#mess').html('Спасибо Вам за сообщение! В ближайшее время, я свяжусь с Вами!');
+					       			jQuery('#contactme')[0].reset();
+					       		}
+					         },
+					       error: function (xhr, ajaxOptions, thrownError) { // в случae нeудaчнoгo зaвeршeния зaпрoсa к сeрвeру
+					       		//alert(data);
+					            $("#sendbutton").val('Не отправлено!');
+					            alert(xhr.status); // пoкaжeм oтвeт сeрвeрa
+					            alert(thrownError); // и тeкст oшибки
+					         },
+					       complete: function(data) { // сoбытиe пoслe любoгo исхoдa
+					       		//alert(data);
+					             $("#sendbutton").val('Отправить');
+					            form.find('input[type="submit"]').prop('disabled', false); // в любoм случae включим кнoпку oбрaтнo
+					         }
+
+						     });
+					}
+					return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+				});
+			});
+		</script>
+
+        <script>
+			$(function() {
+			  $('.scrollup').click(function() {
+			    $("html, body").animate({
+			      scrollTop:0
+			    },700);
+			  })
+			})
+			// при прокрутке окна (window)
+			$(window).scroll(function() {
+			  if ($(this).scrollTop()>200) {
+			    $('.scrollup').fadeIn();
+			  }
+			  else {
+			    $('.scrollup').fadeOut();
+			  }
+			});
+		</script>
+
+		<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52316785, "init", { id:52316785, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52316785" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<!--//<script async defer src="js/libs/bootstrap.min.js"></script>//-->
+		<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script defer async src='js/jquery.scrollto.js'></script>
+		<script defer src='js/jquery.flexslider.min.js'></script>
+		<script defer src='js/jquery.masonry.min.js'></script>
+		<script defer src="js/waypoints.min.js"></script>
+		<script defer src="js/jquery.easypiechart.js"></script>
+		<script defer src="js/jquery.backstretch.min.js"></script>
+		<script defer src="js/libs/modernizr.min.js"></script>
+		<script defer async src='//www.google.com/recaptcha/api.js'></script>
+
+	</body>
+
+</html>

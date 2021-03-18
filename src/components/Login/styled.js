@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import img from '../../assets/img/main_bg.png';
 import img2 from '../../assets/img/main_bg_2.jpeg';
-// import { Link } from 'react-router-dom';
 
 const MainBg = styled.div`
   background-color: rgba(233, 167, 106, 0.685);
   background-image: url(${img2});
-  background-position: center;
+  background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -93,9 +91,6 @@ const LinkForgot = styled(LinkReg)`
     transition: 2s;
   }
 `;
-// const StyledLink = styled(Link)`
-//   text-decoration: none;
-// `;
 
 const LoginStyled = {
   MainBg,
@@ -107,7 +102,6 @@ const LoginStyled = {
   Error,
   LinkReg,
   LinkForgot,
-  // StyledLink,
 };
 
 export default LoginStyled;

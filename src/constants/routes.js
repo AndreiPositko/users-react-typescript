@@ -1,6 +1,9 @@
 const routes = {
-  login: '/login',
   main: '/',
+  login: '/login',
+  users: '/users',
+  posts: '/posts',
+  photos: '/photos',
   notFound: '*',
 };
 

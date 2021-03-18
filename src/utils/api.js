@@ -11,6 +11,16 @@ const api = {
     },
     logOut: () => {},
   },
+  posts: {
+    getPosts: () => {
+      return fetch(`${BASE_URL}/posts`).then((response) => response.json());
+    },
+  },
+  photos: {
+    getPhotos: () => {
+      return fetch(`${BASE_URL}/photos`).then((response) => response.json());
+    },
+  },
 };
 
 export default api;

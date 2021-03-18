@@ -1,7 +1,7 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 
 import api from '../../utils/api';
-import { GET_USERS_REQUEST } from './../users/constants';
+import { GET_USERS_REQUEST } from '../users/constants';
 import { getUsersSuccess, getUsersError } from '../users/actions';
 
 function* getUsers() {
@@ -14,8 +14,8 @@ function* getUsers() {
   }
 }
 
-function* mySaga() {
+function* sagaUsers() {
   yield takeEvery(GET_USERS_REQUEST, getUsers);
 }
 
-export default mySaga;
+export default sagaUsers;

@@ -4,11 +4,19 @@ body {
     height: auto;
 }
 
+.list_item a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        color: #ccc;
+    }
+}
+
 .component_container {
     margin-top: 40px;
 }
 
-.users_list {
+.data_list {
     width: 100%;
 }
 
@@ -18,4 +26,12 @@ body {
     margin-bottom: 10px;
     padding: 5px;
     font-size: 20px;
+}
+
+.main_title {
+    text-align: center;
+}
+
+.item {
+    color: rgb(218, 255, 170);
 }

@@ -2,6 +2,10 @@ import {
   GET_POSTS_REQUEST,
   GET_POSTS_SUCCESS,
   GET_POSTS_ERROR,
+  GET_POST_REQUEST,
+  GET_POST_SUCCESS,
+  GET_POST_ERROR,
+  POST_RESET,
 } from './constants';
 
 export const getPostsRequest = () => ({
@@ -15,4 +19,22 @@ export const getPostsSuccess = (payload) => ({
 
 export const getPostsError = () => ({
   type: GET_POSTS_ERROR,
+});
+
+export const getPostRequest = (payload) => ({
+  type: GET_POST_REQUEST,
+  payload,
+});
+
+export const getPostSuccess = (payload) => ({
+  type: GET_POST_SUCCESS,
+  payload,
+});
+
+export const getPostError = () => ({
+  type: GET_POST_ERROR,
+});
+
+export const postReset = () => ({
+  type: POST_RESET,
 });

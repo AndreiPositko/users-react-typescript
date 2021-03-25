@@ -7,7 +7,6 @@ import { getUsersSuccess, getUsersError } from '../users/actions';
 function* getUsers() {
   try {
     const users = yield call(api.users.getUsers);
-    console.log('USERS', users);
     yield put(getUsersSuccess(users));
   } catch (e) {
     yield put(getUsersError);
@@ -16,6 +15,7 @@ function* getUsers() {
 
 function* sagaUsers() {
   yield takeEvery(GET_USERS_REQUEST, getUsers);
+  // yield takeEvery(GET_USERS_REQUEST, getUsers);
 }
 
 export default sagaUsers;

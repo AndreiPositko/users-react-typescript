@@ -1,10 +1,12 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { WaveLoading } from 'react-loadingg';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
-import { getPostsRequest } from './../../../../store/posts/actions';
+import routes from '../../../../constants/routes';
+import { getPostsRequest } from '../../../../store/posts/actions';
 
 import global from '../../../../common-style/global.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,12 +29,14 @@ const Posts = () => {
             <Container className={ global.component_container }>
                  <Row>
                     {loading && <WaveLoading color='yellow' size='large' />}
-                     <h2>Posts</h2>
-                    <ul className={ global.users_list}>
-                        {posts.map((post) => (
-                            <li key={post.id} className={global.list_item}>{ post.id}. { post.title }</li>
-                        ))}
-                    </ul>
+                    <Col>
+                        <h2 className={global.main_title}>Posts</h2>
+                        <ul className={ global.users_list}>
+                            {posts.map((post) => (
+                                <li key={post.id} className={global.list_item}><Link to={`${routes.posts}/${post.id}`}>{ post.id}. { post.title }</Link></li>
+                            ))}
+                        </ul>
+                    </Col>
                 </Row>
             </Container>
         </div>

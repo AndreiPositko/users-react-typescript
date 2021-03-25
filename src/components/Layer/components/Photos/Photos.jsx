@@ -1,9 +1,11 @@
 import {useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { WaveLoading } from 'react-loadingg';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
+import routes from '../../../../constants/routes';
 import { getPhotosRequest } from '../../../../store/photos/actions';
 
 import global from '../../../../common-style/global.module.scss';
@@ -28,12 +30,19 @@ const Photos = () => {
             <Container className={ global.component_container }>
                  <Row>
                     {loading && <WaveLoading color='yellow' size='large' />}
-                    <h2>Photos</h2>
+                    <Col>
+                    
+                    <h2 className={global.main_title}>Photos</h2>
                     <ul className={ global.users_list}>
                         {photos.map((photo) => (
-                            <li key={photo.id} className={global.list_item}>{photo.id}. <img src={photo.thumbnailUrl} alt={ photo.title}/></li>
+                            <li key={photo.id} className={global.list_item}>
+                                <Link to={`${routes.photos}/${photo.id}`}>
+                                    {photo.id}.
+                                    {/* <img src={photo.thumbnailUrl1} alt={photo.title} /> */}
+                                </Link></li>
                         ))}
-                    </ul>
+                        </ul>
+                    </Col>
                 </Row>
             </Container>
         </div>

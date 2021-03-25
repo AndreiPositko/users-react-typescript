@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import routes from '../../constants/routes';
@@ -8,8 +8,9 @@ import { logOut } from '../../store/auth/actions';
 
 import styles from './style.module.scss';
 
-const Header = ({ history }) => {
+const Header = () => {
     
+    const history = useHistory();
     const dispatch = useDispatch();
 
     const logOutHandler = () => {

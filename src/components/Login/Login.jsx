@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
@@ -11,8 +12,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 toast.configure();
 
-const Login = ({history}) => {
+const Login = () => {
 
+    const history = useHistory();
     const { register, handleSubmit, errors } = useForm();
 
     const { userName, password, isLoggedIn } = useSelector(state => ({

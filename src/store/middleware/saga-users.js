@@ -1,8 +1,13 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 
 import api from '../../utils/api';
-import { GET_USERS_REQUEST } from '../users/constants';
-import { getUsersSuccess, getUsersError } from '../users/actions';
+import { GET_USERS_REQUEST, GET_USER_REQUEST } from '../users/constants';
+import {
+  getUsersSuccess,
+  getUsersError,
+  getUserSuccess,
+  getUserError,
+} from '../users/actions';
 
 function* getUsers() {
   try {
@@ -13,9 +18,18 @@ function* getUsers() {
   }
 }
 
+function* getSingleUser({ payload }) {
+  try {
+    const singleUser = yield call(api.users.getSingleUser, payload);
+    yield put(getUserSuccess(singleUser));
+  } catch (e) {
+    yield put(getUserError());
+  }
+}
+
 function* sagaUsers() {
   yield takeEvery(GET_USERS_REQUEST, getUsers);
-  // yield takeEvery(GET_USERS_REQUEST, getUsers);
+  yield takeEvery(GET_USER_REQUEST, getSingleUser);
 }
 
 export default sagaUsers;

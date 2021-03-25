@@ -2,11 +2,10 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
+import { Container, Row, Col } from 'react-bootstrap';
 import { WaveLoading } from 'react-loadingg';
 
 import { getPhotoRequest, photoReset } from '../../../../store/photos/actions';
-
-import { Container, Row, Col } from 'react-bootstrap';
 
 import global from '../../../../common-style/global.module.scss';
 
@@ -45,6 +44,12 @@ const SinglePhoto = () => {
                                 <span className={ global.item }>
                                     photo url: 
                                 </span> {photo.url}
+                            </li>
+                            <li className={ global.list_item }>
+                                <span className={ global.item }>
+                                    photo img: 
+                                </span>
+                                <img src={ photo.thumbnailUrl } alt={photo.title} />
                             </li>
                         </ul>
                     </Col>

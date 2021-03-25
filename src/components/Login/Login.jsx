@@ -17,13 +17,10 @@ const Login = () => {
     const history = useHistory();
     const { register, handleSubmit, errors } = useForm();
 
-    const { userName, password, isLoggedIn } = useSelector(state => ({
+    const { userName, password } = useSelector(state => ({
         userName: state.auth.userName,
         password: state.auth.password,
-        isLoggedIn: state.auth.isLoggedIn,
     }))
-
-    console.log(isLoggedIn);
 
     const dispatch = useDispatch();
 
@@ -69,7 +66,6 @@ const Login = () => {
                 {errors.password && errors.password.type === 'minLength' && <LoginStyled.Error>This field is required minLength of { 4 } symbols</LoginStyled.Error>}
 
                 <LoginStyled.BtnSubmit title="Login" color="green" type="submit" value='Submit'/>
-                    
                 
                 {/* <Link to={routes.registration} style={{ textDecoration: 'none' }}>
                      <LoginStyled.LinkReg>Registration</LoginStyled.LinkReg>
@@ -80,7 +76,6 @@ const Login = () => {
                 </Link> */}
 
             </LoginStyled.Form>
-            {/* {isLoading && <Loader/>} */}
         </LoginStyled.MainBg>
     )
 }

@@ -1,8 +1,13 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 
 import api from '../../utils/api';
-import { GET_POSTS_REQUEST } from '../posts/constants';
-import { getPostsSuccess, getPostsError } from '../posts/actions';
+import { GET_POSTS_REQUEST, GET_POST_REQUEST } from '../posts/constants';
+import {
+  getPostsSuccess,
+  getPostsError,
+  getPostSuccess,
+  getPostError,
+} from '../posts/actions';
 
 function* getPosts() {
   try {
@@ -13,8 +18,18 @@ function* getPosts() {
   }
 }
 
+function* getSinglePost({ payload }) {
+  try {
+    const singlePost = yield call(api.posts.getSinglePost, payload);
+    yield put(getPostSuccess(singlePost));
+  } catch (e) {
+    yield put(getPostError(e));
+  }
+}
+
 function* sagaPosts() {
   yield takeEvery(GET_POSTS_REQUEST, getPosts);
+  yield takeEvery(GET_POST_REQUEST, getSinglePost);
 }
 
 export default sagaPosts;

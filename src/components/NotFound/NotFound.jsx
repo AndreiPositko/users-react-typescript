@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
 
 import routes from '../../constants/routes';
@@ -11,8 +10,6 @@ const NotFound = () => {
         isLoggedIn: state.auth.isLoggedIn,
     }))
 
-    console.log('isLoggedIn', isLoggedIn);
-
     return (
         <NotFoundStyled.MainBg>
             <NotFoundStyled.MainBlock>
@@ -23,12 +20,12 @@ const NotFound = () => {
 
                 {isLoggedIn ? 
             
-            <NotFoundStyled.StyledLink to={ routes.main }>
-                        Back to Data Page
-            </NotFoundStyled.StyledLink> :
-            <NotFoundStyled.StyledLink to={ routes.login }>
-                        Back to Login
-            </NotFoundStyled.StyledLink>
+                <NotFoundStyled.StyledLink to={ routes.main }>
+                            Back to Data Page
+                </NotFoundStyled.StyledLink> :
+                <NotFoundStyled.StyledLink to={ routes.login }>
+                            Back to Login
+                </NotFoundStyled.StyledLink>
                 }
                 <hr/>
             </NotFoundStyled.MainBlock>                     

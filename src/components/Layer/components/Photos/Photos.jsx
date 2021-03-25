@@ -38,7 +38,7 @@ const Photos = () => {
                             <li key={photo.id} className={global.list_item}>
                                 <Link to={`${routes.photos}/${photo.id}`}>
                                     {photo.id}.
-                                    {/* <img src={photo.thumbnailUrl1} alt={photo.title} /> */}
+                                    <img src={photo.thumbnailUrl} alt={photo.title} />
                                 </Link></li>
                         ))}
                         </ul>

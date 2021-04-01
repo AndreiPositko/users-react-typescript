@@ -5,6 +5,7 @@ import Users from '../components/Layer/components/Users';
 import Posts from '../components/Layer/components/Posts';
 import Photos from '../components/Layer/components/Photos';
 import SingleUser from '../components/Layer/components/SingleUser';
+import EditUser from '../components/Layer/components/SingleUser/components/EditUser';
 import SinglePost from '../components/Layer/components/SinglePost';
 import SinglePhoto from '../components/Layer/components/SinglePhoto';
 import NotFound from '../components/NotFound';
@@ -30,9 +31,11 @@ const Routes = () => {
 
                 <PrivateRoute exact path={ routes.photos } component={ Photos } />
 
-                <PrivateRoute path={`${routes.users}/:id`} component={SingleUser} />
+                <PrivateRoute exact path={`${routes.users}/:id`} component={ SingleUser } />
+
+                <PrivateRoute path={`${routes.users}/:id/edit`} component={ EditUser } />
                 
-                <PrivateRoute path={`${routes.posts}/:id`} component={SinglePost} />
+                <PrivateRoute path={`${routes.posts}/:id`} component={ SinglePost } />
                 
                 <PrivateRoute path={`${routes.photos}/:id`} component={ SinglePhoto }/>
 

@@ -15,14 +15,15 @@ const Posts = () => {
 
     const dispatch = useDispatch();
     
-    useEffect(() => {
-        dispatch(getPostsRequest());
-    }, [dispatch]);
-
     const { posts, loading } = useSelector(state => ({
         posts: state.posts.posts,
         loading: state.posts.loading,
     }))
+    
+    useEffect(() => {
+        if (posts.length > 0) return;
+        dispatch(getPostsRequest());
+    }, [dispatch, posts.length]);
 
     return(
         <div>

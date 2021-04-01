@@ -10,6 +10,21 @@ const api = {
         response.json()
       );
     },
+    editSingleUser: async (data) => {
+      try {
+        const editSingleUser = await fetch(`${BASE_URL}/users/${data.id}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+          },
+          body: JSON.stringify(data),
+        }).then((response) => response.json());
+
+        return editSingleUser;
+      } catch (error) {
+        console.warn(error);
+      }
+    },
     logIn: (userName, password) => {
       localStorage.setItem('username', userName);
       localStorage.setItem('password', password);

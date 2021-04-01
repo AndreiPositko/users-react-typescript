@@ -35,3 +35,84 @@ body {
 .item {
     color: rgb(218, 255, 170);
 }
+
+.list_header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.3rem;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.form_wrapper {
+    background-color: rgba(47, 167, 197, 0.8);
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: white;
+    font-family: 'Courier New',
+        Courier,
+        monospace;
+}
+
+.edit_form {
+    width: 80%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.input_group {
+    position: relative;
+}
+
+.input_error {
+    position: absolute;
+    top: 62px;
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 0;
+    color: rgb(168, 0, 0);
+    font-weight: bold;
+}
+
+.form_input {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 5px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.button_submit {
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0 20px;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: #ccc;
+    }
+
+    &:active {
+        background-color: rgb(250, 128, 128);
+        color: #fff;
+    }
+}

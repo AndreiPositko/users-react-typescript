@@ -6,4 +6,8 @@ export const GET_POST_REQUEST = 'GET_POST_REQUEST';
 export const GET_POST_SUCCESS = 'GET_POST_SUCCESS';
 export const GET_POST_ERROR = 'GET_POST_ERROR';
 
+export const EDIT_POST_REQUEST = 'EDIT_POST_REQUEST';
+export const EDIT_POST_SUCCESS = 'EDIT_POST_SUCCESS';
+export const EDIT_POST_ERROR = 'EDIT_POST_ERROR';
+
 export const POST_RESET = 'POST_RESET';

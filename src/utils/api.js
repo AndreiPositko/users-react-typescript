@@ -40,6 +40,20 @@ const api = {
         response.json()
       );
     },
+    editSinglePost: async (data) => {
+      try {
+        const editSinglePost = await fetch(`${BASE_URL}/posts/${data.id}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+          },
+          body: JSON.stringify(data),
+        }).then((response) => response.json());
+        return editSinglePost;
+      } catch (error) {
+        console.log(error);
+      }
+    },
   },
   photos: {
     getPhotos: () => {
@@ -49,6 +63,20 @@ const api = {
       return fetch(`${BASE_URL}/photos/${id}`).then((response) =>
         response.json()
       );
+    },
+    editSinglePhoto: async (data) => {
+      try {
+        const editSinglePhoto = await fetch(`${BASE_URL}/photos/${data.id}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+          },
+          body: JSON.stringify(data),
+        }).then((response) => response.json());
+        return editSinglePhoto;
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
 };

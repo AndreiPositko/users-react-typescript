@@ -16,33 +16,6 @@ body {
     margin-top: 40px;
 }
 
-.data_list {
-    width: 100%;
-}
-
-.list_item {
-    background-color: rgba(236, 235, 235, 0.3);
-    list-style: none;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 20px;
-}
-
-.main_title {
-    text-align: center;
-}
-
-.item {
-    color: rgb(218, 255, 170);
-}
-
-.list_header {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2.3rem;
-    margin-bottom: 20px;
-}
-
 form label {
     margin-bottom: 0;
     font-size: 18px;
@@ -72,6 +45,10 @@ form label {
 
 .input_group {
     position: relative;
+        textarea {
+            resize: none;
+            height: 150px;
+        }
 }
 
 .input_error {
@@ -116,3 +93,59 @@ form label {
         color: #fff;
     }
 }
+
+// Single data
+
+.list_header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.main_title {
+    text-align: center;
+}
+
+.data_list {
+    width: 100%;
+}
+
+.list_item {
+    background-color: rgba(236, 235, 235, 0.3);
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.item {
+    color: rgb(218, 255, 170);
+}
+
+.single_data_errors {
+    width: 400px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 60, 0, 0.9);
+}
+
+.single_link_error {
+    display: block;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(251, 255, 0);
+    font-weight: 200;
+    text-decoration: underline;
+    border: 1px solid #fff;
+
+    &:hover {
+        color: rgb(0, 0, 0);
+        opacity: 0.8;
+        transition: 0.3s;
+    }
+}
+

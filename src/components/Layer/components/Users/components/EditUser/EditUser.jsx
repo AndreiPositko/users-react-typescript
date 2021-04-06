@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { useParams, useHistory } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import routes from './../../../../../constants/routes';
-import { editUserRequest } from './../../../../../store/users/actions';
-import { MIN_LENGTH } from '../../../../../constants/form';
+import routes from '../../../../../../constants/routes';
+import { editUserRequest } from '../../../../../../store/users/actions';
+import { MIN_LENGTH } from '../../../../../../constants/form';
 
-import global from '../../../../../common-style/global.module.scss';
+import global from '../../../../../../common-style/global.module.scss';
 
 const EditUser = () => {
 
@@ -27,12 +27,9 @@ const EditUser = () => {
 
     useEffect(() => {
 
-        // Edit single user in store
-        const curUser = users.find(user => user.id === +id);
-        setCurrentUser(curUser);
+        const currUser = users.find(user => user.id === +id);
+        setCurrentUser(currUser);
 
-        // Get single user from server
-        // dispatch(getUserRequest(id))
     }, [users, id])
 
     const onSubmit = (data) => {

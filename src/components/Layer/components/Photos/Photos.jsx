@@ -1,4 +1,5 @@
-import {useEffect} from 'react';
+import React, { useEffect } from 'react';
+
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -19,11 +20,12 @@ const Photos = () => {
     const { photos, loading } = useSelector(state => ({
         photos: state.photos.photos,
         loading: state.users.loading,
-    }))
+    }));
 
     useEffect(() => {
+        if (photos.length > 0) return;
         dispatch(getPhotosRequest());
-    }, [dispatch])
+    }, [dispatch, photos.length])
 
     return (
         <div>
@@ -32,15 +34,15 @@ const Photos = () => {
                     {loading && <WaveLoading color='yellow' size='large' />}
                     <Col>
                     
-                    <h2 className={global.main_title}>Photos</h2>
-                    <ul className={ global.users_list}>
-                        {photos.map((photo) => (
-                            <li key={photo.id} className={global.list_item}>
-                                <Link to={`${routes.photos}/${photo.id}`}>
-                                    {photo.id}.
-                                    <img src={photo.thumbnailUrl} alt={photo.title} />
-                                </Link></li>
-                        ))}
+                        <h2 className={global.main_title}>Photos</h2>
+                        <ul className={ global.users_list}>
+                            {photos.map((photo) => (
+                                <li key={photo.id} className={global.list_item}>
+                                    <Link to={`${routes.photos}/${photo.id}`}>
+                                        {photo.id}.
+                                        <img src={photo.thumbnailUrl1} alt={photo.title} />
+                                    </Link></li>
+                            ))}
                         </ul>
                     </Col>
                 </Row>

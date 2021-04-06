@@ -5,6 +5,9 @@ import {
   GET_PHOTO_REQUEST,
   GET_PHOTO_SUCCESS,
   GET_PHOTO_ERROR,
+  EDIT_PHOTO_REQUEST,
+  EDIT_PHOTO_SUCCESS,
+  EDIT_PHOTO_ERROR,
   PHOTO_RESET,
 } from './constants';
 
@@ -33,6 +36,20 @@ export const getPhotoSuccess = (payload) => ({
 
 export const getPhotoError = () => ({
   type: GET_PHOTO_ERROR,
+});
+
+export const editPhotoRequest = (payload) => ({
+  type: EDIT_PHOTO_REQUEST,
+  payload,
+});
+
+export const editPhotoSuccess = (payload) => ({
+  type: EDIT_PHOTO_SUCCESS,
+  payload,
+});
+
+export const editPhotoError = () => ({
+  type: EDIT_PHOTO_ERROR,
 });
 
 export const photoReset = () => ({

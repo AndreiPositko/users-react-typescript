@@ -22,9 +22,8 @@ const Users = () => {
     }))
 
     useEffect(() => {
-        if (users.length) return;
         dispatch(getUsersRequest());
-    }, [dispatch, users.length])
+    }, [dispatch])
 
     return (
         <div>

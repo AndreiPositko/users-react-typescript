@@ -7,9 +7,11 @@ import Users from '../components/Layer/components/Users';
 import Posts from '../components/Layer/components/Posts';
 import Photos from '../components/Layer/components/Photos';
 import SingleUser from '../components/Layer/components/Users/components/SingleUser';
-import EditUser from '../components/Layer/components/Users/components/EditUser';
-import SinglePost from '../components/Layer/components/SinglePost';
-import SinglePhoto from '../components/Layer/components/SinglePhoto';
+import EditUser from '../components/Layer/components/Users/components/EditUser/EditUser';
+import SinglePost from '../components/Layer/components/Posts/components/SinglePost';
+import EditPost from '../components/Layer/components/Posts/components/EditPost';
+// import SinglePhoto from '../components/Layer/components/Photos/components/SinglePhoto';
+// import EditPhoto from '../components/Layer/components/Photos/components/EditPhoto';
 import NotFound from '../components/NotFound';
 import MainPage from './../components/MainPage/MainPage';
 
@@ -37,9 +39,13 @@ const Routes = () => {
 
                 <PrivateRoute path={`${routes.users}/:id/edit`} component={ EditUser } />
                 
-                <PrivateRoute path={`${routes.posts}/:id`} component={ SinglePost } />
+                <PrivateRoute exact path={`${routes.posts}/:id`} component={SinglePost} />
                 
-                <PrivateRoute path={`${routes.photos}/:id`} component={ SinglePhoto }/>
+                <PrivateRoute path={`${routes.posts}/:id/edit`} component={ EditPost }/>
+                
+                {/* <PrivateRoute exact path={`${routes.photos}/:id`} component={SinglePhoto} /> */}
+                
+                {/* <PrivateRoute path={`${routes.photos}/:id/edit`} component={ EditPhoto }/> */}
 
                 <Route path={ routes.notFound } component={ NotFound }/>
             </Switch>

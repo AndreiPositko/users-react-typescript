@@ -52,7 +52,7 @@ const SingleUser = () => {
             }
     }, [dispatch, id])
 
-    const editsingleUser = (data) => {
+    const editSingleUser = (data) => {
         dispatch(editUserRequest({...data, id}))
         history.push(`${url}/edit`);
     }
@@ -66,7 +66,7 @@ const SingleUser = () => {
                         <Col>
                             <div className={global.list_header}>
                                 <h2 className={global.main_title}>User № {singleUser.id}</h2>
-                                <Button variant="warning" onClick={() => editsingleUser(singleUser.id)}>Edit User</Button>
+                                <Button variant="warning" onClick={() => editSingleUser(singleUser.id)}>Edit User</Button>
                             </div>
                             <ul className={global.data_list}>
                                 <li className={global.list_item}><span className={styles.item}>user name:</span> {singleUser.name}</li>

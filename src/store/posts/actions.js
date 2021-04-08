@@ -5,6 +5,9 @@ import {
   GET_POST_REQUEST,
   GET_POST_SUCCESS,
   GET_POST_ERROR,
+  EDIT_POST_REQUEST,
+  EDIT_POST_SUCCESS,
+  EDIT_POST_ERROR,
   POST_RESET,
 } from './constants';
 
@@ -33,6 +36,20 @@ export const getPostSuccess = (payload) => ({
 
 export const getPostError = () => ({
   type: GET_POST_ERROR,
+});
+
+export const editPostRequest = (payload) => ({
+  type: EDIT_POST_REQUEST,
+  payload,
+});
+
+export const editPostSuccess = (payload) => ({
+  type: EDIT_POST_SUCCESS,
+  payload,
+});
+
+export const editPostError = () => ({
+  type: EDIT_POST_ERROR,
 });
 
 export const postReset = () => ({

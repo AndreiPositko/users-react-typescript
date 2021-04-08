@@ -10,3 +10,25 @@ export const transformUserData = (originalUser, editData) => {
 
   return result;
 };
+
+export const transformPostData = (originalPost, editData) => {
+  const { ...rest } = editData;
+
+  const result = {
+    ...originalPost,
+    ...rest,
+  };
+
+  return result;
+};
+
+export const transformPhotoData = (originalPhoto, editData) => {
+  const { ...rest } = editData;
+
+  const result = {
+    ...originalPhoto,
+    ...rest,
+  };
+
+  return result;
+};

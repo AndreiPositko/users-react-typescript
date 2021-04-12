@@ -52,8 +52,8 @@ const SingleUser = () => {
             }
     }, [dispatch, id])
 
-    const editSingleUser = (data) => {
-        dispatch(editUserRequest({...data, id}))
+    const editSingleUser = (id) => {
+        dispatch(getUserRequest(id))
         history.push(`${url}/edit`);
     }
   

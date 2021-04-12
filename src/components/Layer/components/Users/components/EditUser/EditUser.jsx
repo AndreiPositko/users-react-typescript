@@ -22,9 +22,9 @@ const EditUser = () => {
         user: state.users.singleUser,
     }))
 
-    useEffect(() => {
-        dispatch(getUserRequest(id))
-    }, [dispatch, id])
+    // useEffect(() => {
+    //     dispatch(getUserRequest(id))
+    // }, [dispatch, id])                  
 
     const onSubmit = (data) => {
         dispatch(editUserRequest({ ...data, id }));

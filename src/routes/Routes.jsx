@@ -18,7 +18,6 @@ import MainPage from './../components/MainPage/MainPage';
 import PublicRoute from '../components/PublicRoute';
 import PrivateRoute from '../components/PrivateRoute';
 
-
 import routes from './../constants/routes';
 
 const Routes = () => {

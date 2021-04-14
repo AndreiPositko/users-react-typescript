@@ -54,10 +54,17 @@ const Users = () => {
           <Col>
             <h2 className={global.main_title}>Users</h2>
             <div className={global.subtitle}>
-              <span onClick={() => sortData('id')}>id</span>
-              <span onClick={() => sortData('name')}>name</span>
-              <span onClick={() => sortData('email')}>email</span>
-              <span onClick={() => sortData('website')}>web site</span>
+              <span
+                className={global.subtitle_id}
+                onClick={() => sortData('id')}
+              >
+                id
+              </span>
+              <div class={global.subtitle_block}>
+                <span onClick={() => sortData('name')}>name</span>
+                <span onClick={() => sortData('email')}>email</span>
+                <span onClick={() => sortData('website')}>web site</span>
+              </div>
             </div>
             <ul>
               {usersList.map((user, index) => {
@@ -68,10 +75,12 @@ const Users = () => {
                     key={index}
                   >
                     <li key={index} className={global.list_item}>
-                      <span>{user.id}. </span>
-                      <span>{user.name}</span>
-                      <span>{user.email}</span>
-                      <span>{user.website}</span>
+                      <span className={global.list_item_id}>{user.id}.</span>
+                      <div class={global.list_item_block}>
+                        <span>{user.name}</span>
+                        <span>{user.email}</span>
+                        <span>{user.website}</span>
+                      </div>
                     </li>
                   </Link>
                 );

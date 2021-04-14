@@ -19,7 +19,7 @@ import {
 function* getPosts() {
   try {
     const posts = yield call(api.posts.getPosts);
-    yield put(getPostsSuccess(posts));
+    yield put(getPostsSuccess(posts.data));
   } catch (e) {
     yield put(getPostsError);
   }

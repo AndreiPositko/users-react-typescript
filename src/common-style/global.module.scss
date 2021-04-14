@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: auto;
+    box-sizing: border-box;
 }
 
 .list_link {
@@ -14,15 +15,26 @@ body {
 }
 
 .list_item {
+    background-color: rgba(236, 235, 235, 0.3);
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
     display: flex;
-    justify-content: space-between;
+    span {
+        margin-right: 50px;
+        min-width: 27px;
+    }
 }
 
-.list_item span {
-    min-width: 25%;
+.list_item_block {
     text-align: left;
-    &:first-child {
-        min-width: 10px;
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+    span {
+        min-width: 25%;
+        text-align: left;
     }
 }
 
@@ -127,17 +139,28 @@ form label {
     padding-left: 5px;
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
     color: rgb(218, 255, 170);
     background-color: rgba(33, 118, 121, 0.6);
 }
 
-.subtitle span {
-    min-width: 25%;
-    cursor: pointer;
-    &:first-child {
-        min-width: 10px;
+.subtitle_id {
+    min-width: 20px;
+    margin-right: 70px;
+}
+
+.subtitle_block {
+    text-align: left;
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+    span {
+        min-width: 25%;
+        text-align: left;
     }
+}
+
+.subtitle span {
+    cursor: pointer;
     &:hover {
         color: rgb(251, 255, 0);
     }
@@ -145,14 +168,6 @@ form label {
 
 .data_list {
     width: 100%;
-}
-
-.list_item {
-    background-color: rgba(236, 235, 235, 0.3);
-    list-style: none;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 20px;
 }
 
 .item {

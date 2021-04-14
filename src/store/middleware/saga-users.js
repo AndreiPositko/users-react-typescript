@@ -18,7 +18,7 @@ import {
 function* getUsers() {
   try {
     const users = yield call(api.users.getUsers);
-    yield put(getUsersSuccess(users));
+    yield put(getUsersSuccess(users.data));
   } catch (e) {
     yield put(getUsersError);
   }
@@ -27,7 +27,7 @@ function* getUsers() {
 function* getSingleUser({ payload }) {
   try {
     const singleUser = yield call(api.users.getSingleUser, payload);
-    yield put(getUserSuccess(singleUser));
+    yield put(getUserSuccess(singleUser.data));
   } catch (e) {
     yield put(getUserError());
   }
@@ -36,7 +36,7 @@ function* getSingleUser({ payload }) {
 function* editSingleUser({ payload }) {
   try {
     const editSingleUser = yield call(api.users.editSingleUser, payload);
-    yield put(editUserSuccess(editSingleUser));
+    yield put(editUserSuccess(editSingleUser.data));
   } catch (e) {
     yield put(editUserError());
   }

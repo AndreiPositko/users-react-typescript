@@ -7,13 +7,13 @@ import Users from '../components/Layer/components/Users';
 import Posts from '../components/Layer/components/Posts';
 import Photos from '../components/Layer/components/Photos';
 import SingleUser from '../components/Layer/components/Users/components/SingleUser';
-import EditUser from '../components/Layer/components/Users/components/EditUser/EditUser';
+import EditUser from '../components/Layer/components/Users/components/EditUser';
 import SinglePost from '../components/Layer/components/Posts/components/SinglePost';
 import EditPost from '../components/Layer/components/Posts/components/EditPost';
 // import SinglePhoto from '../components/Layer/components/Photos/components/SinglePhoto';
 // import EditPhoto from '../components/Layer/components/Photos/components/EditPhoto';
 import NotFound from '../components/NotFound';
-import MainPage from './../components/MainPage/MainPage';
+import MainPage from './../components/MainPage';
 
 import PublicRoute from '../components/PublicRoute';
 import PrivateRoute from '../components/PrivateRoute';

@@ -4,12 +4,25 @@ body {
     height: auto;
 }
 
-.list_item a {
+.list_link {
     text-decoration: none;
     color: #fff;
-
     &:hover {
         color: #ccc;
+        text-decoration: none;
+    }
+}
+
+.list_item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_item span {
+    min-width: 25%;
+    text-align: left;
+    &:first-child {
+        min-width: 10px;
     }
 }
 
@@ -107,6 +120,27 @@ form label {
 
 .main_title {
     text-align: center;
+}
+
+.subtitle {
+    margin-left: 40px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(218, 255, 170);
+    background-color: rgba(33, 118, 121, 0.6);
+}
+
+.subtitle span {
+    min-width: 25%;
+    cursor: pointer;
+    &:first-child {
+        min-width: 10px;
+    }
+    &:hover {
+        color: rgb(251, 255, 0);
+    }
 }
 
 .data_list {

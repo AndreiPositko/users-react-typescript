@@ -1,55 +1,45 @@
+import axios from 'axios';
+import store from '../store/store';
+import { getServerError } from '../store/errors/actions';
+
 const BASE_URL = 'https://jsonplaceholder.typicode.com';
+
+const axiosInstance = axios.create({
+  baseURL: BASE_URL,
+});
+
+axiosInstance.interceptors.response.use(
+  (response) => {
+    const dispatch = store.dispatch;
+
+    const { status, statusText } = response;
+    const data = { status, statusText };
+
+    if (status >= 400 || status <= 500) {
+      dispatch(getServerError(data));
+      dispatch(getServerError(400));
+      dispatch(getServerError(500));
+    }
+    return response;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
 
 const api = {
   users: {
-    getUsers: () => {
-      return fetch(`${BASE_URL}/users`).then((response) => response.json());
-    },
-    getSingleUser: (id) => {
-      return fetch(`${BASE_URL}/users/${id}`).then((response) =>
-        response.json()
-      );
-    },
-    editSingleUser: async (data) => {
-      try {
-        const editSingleUser = await fetch(`${BASE_URL}/users/${data.id}`, {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json;charset=utf-8',
-          },
-          body: JSON.stringify(data),
-        }).then((response) => response.json());
-
-        return editSingleUser;
-      } catch (error) {
-        console.warn(error);
-      }
-    },
-    logIn: (userName, password) => {
-      localStorage.setItem('username', userName);
-      localStorage.setItem('password', password);
-    },
-    logOut: () => {},
+    getUsers: () => axiosInstance.get(`/users`),
+    getSingleUser: (id) => axiosInstance.get(`/users/${id}`),
+    editSingleUser: (data) => axiosInstance.put(`/users/${data.id}`, data),
   },
   posts: {
-    getPosts: () => {
-      return fetch(`${BASE_URL}/posts`).then((response) => response.json());
-    },
-    getSinglePost: (id) => {
-      return fetch(`${BASE_URL}/posts/${id}`).then((response) =>
-        response.json()
-      );
-    },
+    getPosts: () => axiosInstance.get(`/posts`),
+    getSinglePost: (id) => axiosInstance.get(`/posts/${id}`),
   },
   photos: {
-    getPhotos: () => {
-      return fetch(`${BASE_URL}/photos`).then((response) => response.json());
-    },
-    getSinglePhoto: (id) => {
-      return fetch(`${BASE_URL}/photos/${id}`).then((response) =>
-        response.json()
-      );
-    },
+    getPhotos: () => axiosInstance.get(`/photos?_limit=10`),
+    getSinglePhoto: (id) => axiosInstance.get(`/photos/${id}`),
   },
 };
 

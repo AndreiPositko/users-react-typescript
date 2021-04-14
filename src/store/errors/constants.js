@@ -1,0 +1,1 @@
+export const GET_SERVER_ERROR = 'GET_SERVER_ERROR';

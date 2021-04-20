@@ -5,12 +5,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { WaveLoading } from 'react-loadingg';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import Pagination from '../../../Pagination';
-import routes from '../../../../constants/routes';
-import { getPhotosRequest } from '../../../../store/photos/actions';
-import { LIMIT_PHOTO_ITEMS } from '../../../../constants/pages';
+import Pagination from '~/components/Pagination';
+import routes from '~/constants/routes';
+import { getPhotosRequest } from '~/store/photos/actions';
+import { LIMIT_PHOTO_ITEMS } from '~/constants/pages';
 
-import global from '../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Photos = () => {

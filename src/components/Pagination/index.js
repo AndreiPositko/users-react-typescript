@@ -4,12 +4,22 @@ import { useHistory } from 'react-router-dom';
 
 import { LIMIT_ITEMS } from '../../constants/pages';
 
-const Pagination = ({ count }) => {
+import global from '../../common-style/global.module.scss';
+
+const Pagination = ({ count, pageNumber }) => {
   const pages = count / LIMIT_ITEMS;
   const history = useHistory();
 
   const setQuery = (number) => {
     history.push({ search: `page=${number}` });
+  };
+
+  const backRight = () => {
+    if (pageNumber < pages) setQuery(++pageNumber);
+  };
+
+  const backLeft = () => {
+    if (pageNumber > 1) setQuery(--pageNumber);
   };
 
   const buttons = () => {
@@ -21,9 +31,18 @@ const Pagination = ({ count }) => {
         </span>
       );
     }
+    if (pageNumber < pages)
+      items.push(
+        <span key="backRight" onClick={() => backRight()}>{`>`}</span>
+      );
+    if (pageNumber > 1)
+      items.unshift(
+        <span key="backLeft" onClick={() => backLeft()}>{`<`}</span>
+      );
     return items;
   };
-  return <div>{buttons()}</div>;
+
+  return <div className={global.pagination_wrapper}>{buttons()}</div>;
 };
 
 export default Pagination;

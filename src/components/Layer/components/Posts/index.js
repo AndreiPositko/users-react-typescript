@@ -93,7 +93,7 @@ const Posts = () => {
                   </Link>
                 ))}
             </ul>
-            <Pagination count={posts.length} />
+            <Pagination count={posts.length} pageNumber={pageNumber} />
           </Col>
         </Row>
       </Container>

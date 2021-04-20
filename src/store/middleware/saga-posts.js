@@ -28,7 +28,7 @@ function* getPosts() {
 function* getSinglePost({ payload }) {
   try {
     const singlePost = yield call(api.posts.getSinglePost, payload);
-    yield put(getPostSuccess(singlePost));
+    yield put(getPostSuccess(singlePost.data));
   } catch (e) {
     yield put(getPostError(e));
   }
@@ -37,7 +37,7 @@ function* getSinglePost({ payload }) {
 function* editSinglePost({ payload }) {
   try {
     const editSinglePost = yield call(api.posts.editSinglePost, payload);
-    yield put(editPostSuccess(editSinglePost));
+    yield put(editPostSuccess(editSinglePost.data));
   } catch (e) {
     yield put(editPostError());
   }

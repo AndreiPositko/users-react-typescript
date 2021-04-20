@@ -1,33 +1,30 @@
-import React, { useEffect } from 'react';
-
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
+import { Container, Row, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams, useHistory } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
 
-import routes from '../../../../../../constants/routes';
-import {
-  getPostRequest,
-  editPostRequest,
-} from '../../../../../../store/posts/actions';
+import { editPhotoRequest } from '../../../../../../store/photos/actions';
 import { MIN_LENGTH } from '../../../../../../constants/form';
+import routes from '../../../../../../constants/routes';
 
 import global from '../../../../../../common-style/global.module.scss';
 
-const EditPost = () => {
-  const { register, handleSubmit, errors } = useForm();
-
-  const history = useHistory();
+const EditPhoto = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
   const { id } = useParams();
 
-  const { singlePost } = useSelector((state) => ({
-    singlePost: state.posts.singlePost,
+  const { errors, handleSubmit, register } = useForm();
+
+  const { photo } = useSelector((state) => ({
+    photo: state.photos.singlePhoto,
   }));
 
   const onSubmit = (data) => {
-    dispatch(editPostRequest({ ...data, id }));
-    history.push(routes.posts);
+    dispatch(editPhotoRequest({ ...data, id }));
+    history.push(routes.photos);
   };
 
   return (
@@ -35,19 +32,19 @@ const EditPost = () => {
       <Container>
         <Row>
           <Col>
-            <h2 className={global.main_title}>Edit Post № {id}</h2>
+            <h2 className={global.main_title}>Edit Phtoto № {photo.id}</h2>
             <div className={global.form_wrapper}>
               <form
                 className={global.edit_form}
                 onSubmit={handleSubmit(onSubmit)}
               >
                 <div className={global.input_group}>
-                  <label htmlFor="Hello">Post title</label>
+                  <label htmlFor="Hello">Photo title</label>
                   <input
                     className={global.form_input}
                     name="title"
                     placeholder="enter title"
-                    defaultValue={singlePost.title}
+                    defaultValue={photo.title}
                     ref={register({ required: true, minLength: MIN_LENGTH })}
                   />
                   {errors.title && errors.title.type === 'required' && (
@@ -60,12 +57,12 @@ const EditPost = () => {
                   )}
                 </div>
                 <div className={global.input_group}>
-                  <label htmlFor="Hello">Post Body</label>
+                  <label htmlFor="Hello">Photo Url</label>
                   <textarea
                     className={global.form_input}
-                    name="body"
+                    name="url"
                     placeholder="enter body"
-                    defaultValue={singlePost.body}
+                    defaultValue={photo.url}
                     ref={register({ required: true, minLength: MIN_LENGTH })}
                   />
                   {errors.body && errors.body.type === 'required' && (
@@ -91,4 +88,4 @@ const EditPost = () => {
   );
 };
 
-export default EditPost;
+export default EditPhoto;

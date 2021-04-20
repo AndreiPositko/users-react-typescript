@@ -36,10 +36,12 @@ const api = {
   posts: {
     getPosts: () => axiosInstance.get(`/posts`),
     getSinglePost: (id) => axiosInstance.get(`/posts/${id}`),
+    editSinglePost: (data) => axiosInstance.put(`/posts/${data.id}`, data),
   },
   photos: {
     getPhotos: () => axiosInstance.get(`/photos?_limit=10`),
     getSinglePhoto: (id) => axiosInstance.get(`/photos/${id}`),
+    editSinglePhoto: (data) => axiosInstance.put(`/photos/${data.id}`, data),
   },
 };
 

@@ -10,8 +10,8 @@ import SingleUser from '../components/Layer/components/Users/components/SingleUs
 import EditUser from '../components/Layer/components/Users/components/EditUser';
 import SinglePost from '../components/Layer/components/Posts/components/SinglePost';
 import EditPost from '../components/Layer/components/Posts/components/EditPost';
-// import SinglePhoto from '../components/Layer/components/Photos/components/SinglePhoto';
-// import EditPhoto from '../components/Layer/components/Photos/components/EditPhoto';
+import SinglePhoto from '../components/Layer/components/Photos/components/SinglePhoto';
+import EditPhoto from '../components/Layer/components/Photos/components/EditPhoto';
 import NotFound from '../components/NotFound';
 import MainPage from './../components/MainPage';
 
@@ -42,9 +42,9 @@ const Routes = () => {
                 
                 <PrivateRoute path={`${routes.posts}/:id/edit`} component={ EditPost }/>
                 
-                {/* <PrivateRoute exact path={`${routes.photos}/:id`} component={SinglePhoto} /> */}
+                <PrivateRoute exact path={`${routes.photos}/:id`} component={SinglePhoto} />
                 
-                {/* <PrivateRoute path={`${routes.photos}/:id/edit`} component={ EditPhoto }/> */}
+                <PrivateRoute path={`${routes.photos}/:id/edit`} component={ EditPhoto }/>
 
                 <Route path={ routes.notFound } component={ NotFound }/>
             </Switch>

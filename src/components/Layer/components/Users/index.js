@@ -37,8 +37,9 @@ const Users = () => {
   );
 
   useEffect(() => {
+    if (users.length > 0) return;
     dispatch(getUsersRequest());
-  }, [dispatch]);
+  }, [dispatch, users.length]);
 
   useEffect(() => {
     setUsersList(users);

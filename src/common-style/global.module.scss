@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     span {
-        min-width: 25%;
+        width: 25%;
         text-align: left;
     }
 }
@@ -197,5 +197,23 @@ form label {
         color: rgb(0, 0, 0);
         opacity: 0.8;
         transition: 0.3s;
+    }
+}
+
+// Pagination
+.pagination_wrapper {
+    width: 250px;
+    color: rgb(177, 177, 177);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid grey;
+    span {
+        margin-right: 7px;
+        cursor: pointer;
+        &:hover {
+            color: rgb(255, 0, 0);
+            transition: 0.4s;
+        }
     }
 }

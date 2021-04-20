@@ -5,12 +5,18 @@ import {
   GET_PHOTO_REQUEST,
   GET_PHOTO_SUCCESS,
   GET_PHOTO_ERROR,
+  EDIT_PHOTO_REQUEST,
+  EDIT_PHOTO_SUCCESS,
+  EDIT_PHOTO_ERROR,
   PHOTO_RESET,
 } from './constants';
+
+import { transformPhotoData } from './../../utils/helper';
 
 const initialState = {
   photos: [],
   singlePhoto: {},
+  editedSinglePhoto: {},
   loading: false,
 };
 
@@ -20,6 +26,7 @@ const photosReducer = (state = initialState, actions) => {
   switch (type) {
     case GET_PHOTOS_REQUEST:
     case GET_PHOTO_REQUEST:
+    case EDIT_PHOTO_REQUEST:
       return {
         ...state,
         loading: true,
@@ -36,8 +43,23 @@ const photosReducer = (state = initialState, actions) => {
         loading: false,
         singlePhoto: payload,
       };
+    case EDIT_PHOTO_SUCCESS:
+      const photos = state.photos.map((item) => {
+        if (item.id === payload.id) {
+          return transformPhotoData(item, payload);
+        } else {
+          return item;
+        }
+      });
+      return {
+        ...state,
+        photos,
+        loading: false,
+        editedSinglePhoto: payload,
+      };
     case GET_PHOTOS_ERROR:
     case GET_PHOTO_ERROR:
+    case EDIT_PHOTO_ERROR:
       return {
         ...state,
         loading: false,

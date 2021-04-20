@@ -8,7 +8,6 @@ import { Button } from 'react-bootstrap';
 
 import {
   getPostRequest,
-  editPostRequest,
   postReset,
 } from '../../../../../../store/posts/actions';
 import routes from './../../../../../../constants/routes';
@@ -34,8 +33,8 @@ const SinglePost = () => {
     };
   }, [dispatch, id]);
 
-  const editSinglePost = (data) => {
-    dispatch(editPostRequest({ ...data, id }));
+  const editSinglePost = (id) => {
+    dispatch(getPostRequest(id));
     history.push(`${url}/edit`);
   };
 
@@ -48,12 +47,12 @@ const SinglePost = () => {
           ) : singlePost.id ? (
             <Col>
               <div className={global.list_header}>
-                <h2 className={global.main_title}>User № {singlePost.id}</h2>
+                <h2 className={global.main_title}>Post № {singlePost.id}</h2>
                 <Button
                   variant="warning"
                   onClick={() => editSinglePost(singlePost.id)}
                 >
-                  Edit User
+                  Edit Post
                 </Button>
               </div>
               <ul className={global.data_list}>

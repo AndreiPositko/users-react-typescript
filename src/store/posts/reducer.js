@@ -11,7 +11,7 @@ import {
   POST_RESET,
 } from './constants';
 
-import { transformPostData } from '../../utils/helper';
+import { transformPostData } from '~/utils/helper';
 
 const initialState = {
   posts: [],

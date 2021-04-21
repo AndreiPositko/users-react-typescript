@@ -5,11 +5,11 @@ import { useForm } from 'react-hook-form';
 import { useParams, useHistory } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import routes from './../../../../../../constants/routes';
-import { editUserRequest } from './../../../../../../store/users/actions';
-import { MIN_LENGTH } from '../../../../../../constants/form';
+import routes from '~/constants/routes';
+import { editUserRequest } from '~/store/users/actions';
+import { MIN_LENGTH } from '~/constants/form';
 
-import global from '../../../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 
 const EditUser = () => {
   const { register, handleSubmit, errors } = useForm();

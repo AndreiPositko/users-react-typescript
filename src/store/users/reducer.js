@@ -11,7 +11,7 @@ import {
   USER_RESET,
 } from './constants';
 
-import { transformUserData } from '../../utils/helper';
+import { transformUserData } from '~/utils/helper';
 
 const initialState = {
   data: [],

@@ -1,4 +1,4 @@
-import react, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -6,9 +6,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useParams, useHistory, useRouteMatch } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 
-import { getPhotoRequest } from '../../../../../../store/photos/actions';
+import { getPhotoRequest } from '~/store/photos/actions';
 
-import global from '../../../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 
 const SinglePhoto = () => {
   const dispatch = useDispatch();
@@ -22,7 +22,7 @@ const SinglePhoto = () => {
 
   useEffect(() => {
     dispatch(getPhotoRequest(id));
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   const editSinglePhoto = (id) => {
     dispatch(getPhotoRequest(id));

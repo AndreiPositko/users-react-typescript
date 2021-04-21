@@ -1,18 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { useParams, useHistory } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import routes from '../../../../../../constants/routes';
-import {
-  getPostRequest,
-  editPostRequest,
-} from '../../../../../../store/posts/actions';
-import { MIN_LENGTH } from '../../../../../../constants/form';
+import routes from '~/constants/routes';
+import { editPostRequest } from '~/store/posts/actions';
+import { MIN_LENGTH } from '~/constants/form';
 
-import global from '../../../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 
 const EditPost = () => {
   const { register, handleSubmit, errors } = useForm();

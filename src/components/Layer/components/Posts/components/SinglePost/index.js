@@ -6,13 +6,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { WaveLoading } from 'react-loadingg';
 import { Button } from 'react-bootstrap';
 
-import {
-  getPostRequest,
-  postReset,
-} from '../../../../../../store/posts/actions';
-import routes from './../../../../../../constants/routes';
+import { getPostRequest, postReset } from '~/store/posts/actions';
+import routes from '~/constants/routes';
 
-import global from '../../../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 
 const SinglePost = () => {
   const dispatch = useDispatch();

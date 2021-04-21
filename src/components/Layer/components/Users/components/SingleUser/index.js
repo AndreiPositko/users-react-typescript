@@ -6,14 +6,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { WaveLoading } from 'react-loadingg';
 import { Button } from 'react-bootstrap';
 
-import {
-  userReset,
-  getUserRequest,
-} from '../../../../../../store/users/actions';
-import routes from './../../../../../../constants/routes';
+import { userReset, getUserRequest } from '~/store/users/actions';
+import routes from '~/constants/routes';
 
 import styles from './style.module.scss';
-import global from '../../../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
 const SingleUser = () => {

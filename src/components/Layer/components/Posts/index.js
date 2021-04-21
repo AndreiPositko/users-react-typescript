@@ -5,12 +5,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { WaveLoading } from 'react-loadingg';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import routes from '../../../../constants/routes';
-import { getPostsRequest } from '../../../../store/posts/actions';
-import Pagination from './../../../Pagination';
-import { LIMIT_ITEMS } from '../../../../constants/pages';
+import routes from '~/constants/routes';
+import { getPostsRequest } from '~/store/posts/actions';
+import Pagination from '~/components/Pagination';
+import { LIMIT_ITEMS } from '~/constants/pages';
 
-import global from '../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Posts = () => {

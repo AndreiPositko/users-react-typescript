@@ -11,7 +11,7 @@ import {
   PHOTO_RESET,
 } from './constants';
 
-import { transformPhotoData } from './../../utils/helper';
+import { transformPhotoData } from '~/utils/helper';
 
 const initialState = {
   photos: [],

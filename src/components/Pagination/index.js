@@ -2,9 +2,9 @@ import React from 'react';
 
 import { useHistory } from 'react-router-dom';
 
-import { LIMIT_ITEMS } from '../../constants/pages';
+import { LIMIT_ITEMS } from '~/constants/pages';
 
-import global from '../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 
 const Pagination = ({ count, pageNumber }) => {
   const pages = count / LIMIT_ITEMS;

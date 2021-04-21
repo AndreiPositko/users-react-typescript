@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 
-import api from '../../utils/api';
+import api from '~/utils/api';
 import {
   GET_POSTS_REQUEST,
   GET_POST_REQUEST,

@@ -5,11 +5,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { useParams, useHistory } from 'react-router-dom';
 
-import { editPhotoRequest } from '../../../../../../store/photos/actions';
-import { MIN_LENGTH } from '../../../../../../constants/form';
-import routes from '../../../../../../constants/routes';
+import { editPhotoRequest } from '~/store/photos/actions';
+import { MIN_LENGTH } from '~/constants/form';
+import routes from '~/constants/routes';
 
-import global from '../../../../../../common-style/global.module.scss';
+import global from '~/common-style/global.module.scss';
 
 const EditPhoto = () => {
   const dispatch = useDispatch();

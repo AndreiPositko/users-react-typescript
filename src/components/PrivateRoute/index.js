@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 import Layer from '../Layer';
 
-import routes from './../../constants/routes';
+import routes from '~/constants/routes';
 
 const PrivateRoute = ({ ...rest }) => {
   // const { component: Component, ...rest } = props;

@@ -6,8 +6,8 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
-import { logIn, logOut } from '../../store/auth/actions';
-import routes from '../../constants/routes';
+import { logIn, logOut } from '~/store/auth/actions';
+import routes from '~/constants/routes';
 
 import LoginStyled from './styled';
 import 'react-toastify/dist/ReactToastify.css';

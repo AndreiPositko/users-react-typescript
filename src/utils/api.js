@@ -1,6 +1,6 @@
 import axios from 'axios';
-import store from '../store/store';
-import { getServerError } from '../store/errors/actions';
+import store from '~/store/store';
+import { getServerError } from '~/store/errors/actions';
 
 const BASE_URL = process.env.REACT_APP_API_HOST;
 

@@ -4,8 +4,8 @@ import { useDispatch } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import routes from '../../constants/routes';
-import { logOut } from '../../store/auth/actions';
+import routes from '~/constants/routes';
+import { logOut } from '~/store/auth/actions';
 
 import styles from './style.module.scss';
 

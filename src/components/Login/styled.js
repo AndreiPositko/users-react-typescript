@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img2 from '../../assets/img/main_bg_2.jpeg';
+import img2 from '~/assets/img/main_bg_2.jpeg';
 
 const MainBg = styled.div`
   background-color: rgba(233, 167, 106, 0.685);

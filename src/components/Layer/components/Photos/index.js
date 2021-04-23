@@ -73,7 +73,7 @@ const Photos = () => {
               >
                 id
               </span>
-              <div class={global.subtitle_block}>
+              <div className={global.subtitle_block}>
                 <span onClick={() => sortData('thumbnailUrl')}>image</span>
                 <span onClick={() => sortData('title')}>title</span>
               </div>

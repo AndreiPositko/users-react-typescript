@@ -61,7 +61,7 @@ const Users = () => {
               >
                 id
               </span>
-              <div class={global.subtitle_block}>
+              <div className={global.subtitle_block}>
                 <span onClick={() => sortData('name')}>name</span>
                 <span onClick={() => sortData('email')}>email</span>
                 <span onClick={() => sortData('website')}>web site</span>
@@ -77,7 +77,7 @@ const Users = () => {
                   >
                     <li key={index} className={global.list_item}>
                       <span className={global.list_item_id}>{user.id}.</span>
-                      <div class={global.list_item_block}>
+                      <div className={global.list_item_block}>
                         <span>{user.name}</span>
                         <span>{user.email}</span>
                         <span>{user.website}</span>

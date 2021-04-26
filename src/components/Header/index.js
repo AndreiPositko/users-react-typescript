@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <div className={styles.header_wrapper}>
-      <Container className={styles.header} fluid="md">
+      <Container className={styles.header} fluid>
         <Row className={styles.row}>
           <Col>Data</Col>
           <Col className={styles.header_links}>

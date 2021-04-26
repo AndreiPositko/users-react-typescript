@@ -4,8 +4,6 @@ import { getServerError } from '~/store/errors/actions';
 
 const BASE_URL = process.env.REACT_APP_API_HOST;
 
-// const BASE_URL = 'https://jsonplaceholder.typicode.com';
-
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
 });
@@ -20,7 +18,6 @@ axiosInstance.interceptors.response.use(
     if (status >= 400 || status <= 500) {
       dispatch(getServerError(data));
     }
-    console.log('process.env', process.env);
 
     return response;
   },
